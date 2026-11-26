@@ -1,0 +1,32 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+
+# Build artifacts
+build/
+dist/
+
+# Test / tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environment
+.venv/
+
+# Local database (gitignored)
+data/*.db
+data/*.db-*
+
+# User Markdown notes (sync source)
+notes/*
+!notes/.gitkeep
+
+# CodeGraph local index
+.codegraph/
+
+# Local project plan & personal code guide
+plan_de_proyecto_cyberrecall_sm_2.md
+docs/guia-del-codigo.md

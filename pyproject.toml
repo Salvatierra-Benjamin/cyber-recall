@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "cyber-recall"
+version = "0.1.0"
+description = "Active Recall & Spaced Repetition (SM-2) engine from Markdown notes"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+cyber-recall = "cyber_recall.cli:main"
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/cyber_recall"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

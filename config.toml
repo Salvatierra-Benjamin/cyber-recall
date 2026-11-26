@@ -1,0 +1,18 @@
+# cyber-recall configuration file.
+
+[paths]
+# Directory (relative to this file) where Markdown notes live.
+notes_dir = "notes"
+# SQLite database path (relative to this file).
+database_path = "data/cyber-recall.db"
+
+[study]
+# Maximum number of new cards introduced per day.
+daily_new_limit = 20
+
+[llm]
+# Optional LLM evaluator (used in a later phase).
+enabled = false
+base_url = "http://localhost:11434"
+model = "llama3.1"
+api_key = ""
